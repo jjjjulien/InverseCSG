@@ -77,11 +77,11 @@ This solves a simple cube. The whole process should finish within a minute. You 
 
 If you want to see some quick results, you can try:
 ```bash
-python3 run_tests.py <build_folder> ex_011
-python3 run_tests.py <build_folder> ex_067
-python3 run_tests.py <build_folder> ex_096
-python3 run_tests.py <build_folder> ex_144
-python3 run_tests.py <build_folder> ex_145
+python3 run_tests.py ./build ex_011
+python3 run_tests.py ./build ex_067
+python3 run_tests.py ./build ex_096
+python3 run_tests.py ./build ex_144
+python3 run_tests.py ./build ex_145
 ```
 
 ## Examples

@@ -117,7 +117,7 @@ def InstallCGAL(build_folder, init=True):
     cgal_file = os.path.join(build_folder, 'cgal.zip')
     urllib.request.urlretrieve(cgal_url, cgal_file)
     helper.Run('unzip -o -q %s -d %s' % (cgal_file, build_folder))
-    os.remove(cgal_file)
+    # os.remove(cgal_file)
   # Now you have the source code.
   helper.PrintWithGreenColor('Downloaded and unzipped CGAL 4.12')
   cgal_dir = ''
@@ -136,14 +136,10 @@ def InstallEigen(root_folder, init=True):
     helper.Run('unzip 3.3.4.zip -d %s' % os.path.join(cpp_lib_folder))
     helper.Run('mv %s %s' % (os.path.join(cpp_lib_folder, \
      'eigen-git-mirror-3.3.4'), os.path.join(cpp_lib_folder, 'eigen-3.3.4')))
-    helper.Run('rm 3.3.4.zip')
+    # helper.Run('rm 3.3.4.zip')
     helper.PrintWithGreenColor('Installed Eigen')
 
 def InstallJava():
-  # java not hosted anymore: http://www.webupd8.org/2014/03/how-to-install-oracle-java-8-in-debian.html
-  # helper.Run('sudo add-apt-repository -y ppa:webupd8team/java')
-  # helper.Run('sudo apt-get update')
-  # helper.Run('sudo apt-get install oracle-java8-installer')
   helper.Run('sudo apt-get install openjdk-8-jre')
 
   # Currently JAVA_HOME is hard coded.
@@ -213,7 +209,7 @@ def main():
       print('Attempt to install build-essential, autoconf, libtool, flex, bison, '
             'mecurial, zsh, and cmake. Asking for sudo privilege.')
       # This works for Ubuntu 17.04 and 16.04.
-      exit_code = helper.Run('sudo apt-get install gcc-6 g++-6 -y', None)
+      exit_code = helper.Run('sudo apt-get install gcc-9 g++-9 -y', None)
       if exit_code != 0:
         # This works for Ubuntu 14.04.
         helper.Run('sudo apt-get update')
@@ -223,7 +219,7 @@ def main():
         helper.Run('sudo apt-get update')
         helper.Run('sudo apt-get install gcc-snapshot -y')
         helper.Run('sudo apt-get update')
-        helper.Run('sudo apt-get install gcc-6 g++-6 -y')
+        helper.Run('sudo apt-get install gcc-9 g++-9 -y')
         helper.Run('sudo apt-get install autoconf libtool flex bison '
           'mercurial zsh cmake git')
     
@@ -247,8 +243,8 @@ def main():
       os.makedirs(cpp_build_folder)
     if args.cpp:
       os.chdir(cpp_build_folder)
-      os.environ['CC'] = '/usr/bin/gcc-6'
-      os.environ['CXX'] = '/usr/bin/g++-6'
+      os.environ['CC'] = '/usr/bin/gcc-9'
+      os.environ['CXX'] = '/usr/bin/g++-9'
       helper.Run('cmake -DCGAL_DIR=%s %s' % (env_variables['CGAL_DIR'], \
                                              os.path.join(root_folder, 'cpp')))
       helper.Run('make')
@@ -296,6 +292,7 @@ def main():
       os.chdir(sketch_backend_folder)
       helper.Run('bash autogen.sh')
       helper.Run('./configure')
+      # helper.Run('make clean')
       helper.Run('make -j2')
       # Interestingly, I need to manually do the following copy and paste work to
       # avoid an error in sketch-frontend.
@@ -331,3 +328,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    # InstallJava()
