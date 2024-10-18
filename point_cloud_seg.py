@@ -17,7 +17,7 @@ def SegmentPointCloud(data_file, seg_num, seg_file_prefix, visualize=False):
     ax.set_xlabel('x')
     ax.set_ylabel('y')
     ax.set_zlabel('z')
-    ax.set_aspect('equal')
+    ax.set_aspect('auto')
     plt.show()
   # Clustering.
   cluster_result = cluster.AgglomerativeClustering(n_clusters = seg_num)
@@ -34,7 +34,7 @@ def SegmentPointCloud(data_file, seg_num, seg_file_prefix, visualize=False):
     ax.set_xlabel('x')
     ax.set_ylabel('y')
     ax.set_zlabel('z')
-    ax.set_aspect('equal')
+    ax.set_aspect('auto')
     plt.show()
   # Save all segmentation results into file. The file names will be:
   # seg_file_prefix_0.data, seg_file_prefix_1.data, ...

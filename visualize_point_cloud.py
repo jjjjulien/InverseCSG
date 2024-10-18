@@ -13,7 +13,7 @@ def VisualizePointCloud(data_file):
   ax.set_xlabel('x')
   ax.set_ylabel('y')
   ax.set_zlabel('z')
-  ax.set_aspect('equal')
+  ax.set_aspect('auto')
   plt.show()
 
 if __name__ == '__main__':
