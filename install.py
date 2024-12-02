@@ -232,16 +232,16 @@ def main():
       helper.Run('python3 -m pip install -U scikit-learn')
     
     # Install CGAL.
-    InstallCGAL(build_folder, args.eigen)
+    InstallCGAL(build_folder, False)
     
     # Install Eigen-3.3.4.
-    InstallEigen(root_folder, args.cgal)
+    # InstallEigen(root_folder, args.cgal)
     
     # Compile cpp.
     cpp_build_folder = os.path.join(build_folder, 'cpp')
     if not os.path.exists(cpp_build_folder):
       os.makedirs(cpp_build_folder)
-    if args.cpp:
+    if False:
       os.chdir(cpp_build_folder)
       os.environ['CC'] = '/usr/bin/gcc-9'
       os.environ['CXX'] = '/usr/bin/g++-9'
@@ -263,10 +263,10 @@ def main():
     # If we are here, Sketch is not properly installed.
     # First, install Oracle JDK 8.
     print('Attempt to install Oracle JDK 8. Asking for sudo privilege.')
-    InstallJava()
+    # InstallJava()
     
     # Next, install maven.
-    InstallMaven()
+    # InstallMaven()
     
     # * Download sketch-backend.
     sketch_folder = os.path.join(build_folder, 'sketch')

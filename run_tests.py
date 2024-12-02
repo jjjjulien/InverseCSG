@@ -15,7 +15,45 @@ if len(sys.argv) < 3:
 build_dir = sys.argv[1]
 test_name = sys.argv[2]
 
-if test_name == 'one_cube':
+if test_name == 'cube_cube_cylinder':
+    os.system('python3 main.py --builddir %s --outdir decomposable/cube_cube_cylinder --mesh decomposable/cube_cube_cylinder/cube_cube_cylinder.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'cube_cube':
+    os.system('python3 main.py --builddir %s --outdir decomposable/cube_cube --mesh decomposable/cube_cube/cube_cube.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'cylinder_cylinder':
+    os.system('python3 main.py --builddir %s --outdir decomposable/cylinder_cylinder --mesh decomposable/cylinder_cylinder/cylinder_cylinder.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'cylinder_ring':
+    os.system('python3 main.py --builddir %s --outdir decomposable/cylinder_ring --mesh decomposable/cylinder_ring/cylinder_ring.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'Model_101':
+    os.system('python3 main.py --builddir %s --outdir decomposable/Model_101 --mesh decomposable/Model_101/Model_101.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'Model_14':
+    os.system('python3 main.py --builddir %s --outdir decomposable/Model_14 --mesh decomposable/Model_14/Model_14.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'Model_28':
+    os.system('python3 main.py --builddir %s --outdir decomposable/Model_28 --mesh decomposable/Model_28/Model_28.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'Model_32':
+    os.system('python3 main.py --builddir %s --outdir decomposable/Model_32 --mesh decomposable/Model_32/Model_32.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'Model_87':
+    os.system('python3 main.py --builddir %s --outdir decomposable/Model_87 --mesh decomposable/Model_87/Model_87.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'Model_89':
+    os.system('python3 main.py --builddir %s --outdir decomposable/Model_89 --mesh decomposable/Model_89/Model_89.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'Model_9':
+    os.system('python3 main.py --builddir %s --outdir decomposable/Model_9 --mesh decomposable/Model_9/Model_9.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'No000256_ASSY_part0':
+    os.system('python3 main.py --builddir %s --outdir decomposable/No000256_ASSY_part0 --mesh decomposable/No000256_ASSY_part0/No000256_ASSY_part0.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'No000256_ASSY_part10':
+    os.system('python3 main.py --builddir %s --outdir decomposable/No000256_ASSY_part10 --mesh decomposable/No000256_ASSY_part10/No000256_ASSY_part10.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'No000256_ASSY_part14':
+    os.system('python3 main.py --builddir %s --outdir decomposable/No000256_ASSY_part14 --mesh decomposable/No000256_ASSY_part14/No000256_ASSY_part14.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'No000256_ASSY_part6':
+    os.system('python3 main.py --builddir %s --outdir decomposable/No000256_ASSY_part6 --mesh decomposable/No000256_ASSY_part6/No000256_ASSY_part6.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'sphere_sphere':
+    os.system('python3 main.py --builddir %s --outdir decomposable/sphere_sphere --mesh decomposable/sphere_sphere/sphere_sphere.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'temp_7':
+    os.system('python3 main.py --builddir %s --outdir decomposable/temp_7 --mesh decomposable/temp_7/temp_7.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'temp_8':
+    os.system('python3 main.py --builddir %s --outdir decomposable/temp_8 --mesh decomposable/temp_8/temp_8.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'UpSmokeBox':
+    os.system('python3 main.py --builddir %s --outdir decomposable/UpSmokeBox --mesh decomposable/UpSmokeBox/UpSmokeBox.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'one_cube':
   os.system('python3 main.py --builddir %s --outdir ../one_cube --mesh example/one_cube/csg_low_res.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
 elif test_name == 'rotated_cuboid':
   os.system('python3 main.py --builddir %s --outdir ../rotated_cuboid --mesh example/rotated_cuboid/csg_low_res.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)

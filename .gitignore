@@ -6,3 +6,5 @@ cpp/lib/eigen*
 *.zip*
 
 .idea/
+
+decomposable/
