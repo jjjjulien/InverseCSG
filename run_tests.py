@@ -65,6 +65,42 @@ elif test_name == 'ABC_8':
     os.system('python3 main.py --builddir %s --outdir decomposable/ABC_8 --mesh decomposable/ABC_8/ABC_8.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
 elif test_name == 'ABC_9':
     os.system('python3 main.py --builddir %s --outdir decomposable/ABC_9 --mesh decomposable/ABC_9/ABC_9.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'ABC_9808':
+    os.system('python3 main.py --builddir %s --outdir decomposable/ABC_9808 --mesh decomposable/ABC_9808/ABC_9808.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'ABC_9819':
+    os.system('python3 main.py --builddir %s --outdir decomposable/ABC_9819 --mesh decomposable/ABC_9819/ABC_9819.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'ABC_9829':
+    os.system('python3 main.py --builddir %s --outdir decomposable/ABC_9829 --mesh decomposable/ABC_9829/ABC_9829.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'ABC_9835':
+    os.system('python3 main.py --builddir %s --outdir decomposable/ABC_9835 --mesh decomposable/ABC_9835/ABC_9835.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'ABC_9865':
+    os.system('python3 main.py --builddir %s --outdir decomposable/ABC_9865 --mesh decomposable/ABC_9865/ABC_9865.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'ABC_9875':
+    os.system('python3 main.py --builddir %s --outdir decomposable/ABC_9875 --mesh decomposable/ABC_9875/ABC_9875.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'ABC_9887':
+    os.system('python3 main.py --builddir %s --outdir decomposable/ABC_9887 --mesh decomposable/ABC_9887/ABC_9887.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'ABC_9892':
+    os.system('python3 main.py --builddir %s --outdir decomposable/ABC_9892 --mesh decomposable/ABC_9892/ABC_9892.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'ABC_9893':
+    os.system('python3 main.py --builddir %s --outdir decomposable/ABC_9893 --mesh decomposable/ABC_9893/ABC_9893.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'ABC_9896':
+    os.system('python3 main.py --builddir %s --outdir decomposable/ABC_9896 --mesh decomposable/ABC_9896/ABC_9896.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'ABC_9924':
+    os.system('python3 main.py --builddir %s --outdir decomposable/ABC_9924 --mesh decomposable/ABC_9924/ABC_9924.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'ABC_9927':
+    os.system('python3 main.py --builddir %s --outdir decomposable/ABC_9927 --mesh decomposable/ABC_9927/ABC_9927.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'ABC_9931':
+    os.system('python3 main.py --builddir %s --outdir decomposable/ABC_9931 --mesh decomposable/ABC_9931/ABC_9931.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'ABC_9934':
+    os.system('python3 main.py --builddir %s --outdir decomposable/ABC_9934 --mesh decomposable/ABC_9934/ABC_9934.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'ABC_9947':
+    os.system('python3 main.py --builddir %s --outdir decomposable/ABC_9947 --mesh decomposable/ABC_9947/ABC_9947.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'ABC_9951':
+    os.system('python3 main.py --builddir %s --outdir decomposable/ABC_9951 --mesh decomposable/ABC_9951/ABC_9951.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'ABC_9954':
+    os.system('python3 main.py --builddir %s --outdir decomposable/ABC_9954 --mesh decomposable/ABC_9954/ABC_9954.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
+elif test_name == 'ABC_9959':
+    os.system('python3 main.py --builddir %s --outdir decomposable/ABC_9959 --mesh decomposable/ABC_9959/ABC_9959.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
 elif test_name == 'cube_cube_cylinder':
     os.system('python3 main.py --builddir %s --outdir decomposable/cube_cube_cylinder --mesh decomposable/cube_cube_cylinder/cube_cube_cylinder.off --eps 0.1 --surfacedensity 100 --volumedensity 10' % build_dir)
 elif test_name == 'cube_cube':
